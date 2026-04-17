@@ -1,0 +1,91 @@
+/* Reseteo básico para asegurar consistencia en diferentes navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo del fondo usando un degradado moderno */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor de la tarjeta principal */
+.tarjeta {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo para el ícono/avatar superior */
+.avatar {
+    font-size: 50px;
+    margin-bottom: 20px;
+    background: #f0f4f8;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2d3748;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+p {
+    color: #718096;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+/* Estilos de los botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-primario {
+    background-color: #4a5568;
+    color: white;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: #4a5568;
+    border: 2px solid #4a5568;
+}
+
+.btn:hover {
+    background-color: #2d3748;
+    color: white;
+    transform: scale(1.05);
+}
